@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HuCoderz Accounts</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+      *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:#F5F5F5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    width:100%;
+    color:#fff;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:900px;
+    text-align:center;
+    background:rgba(255,255,255,0.08);
+    padding:40px;
+    border-radius:20px;
+    backdrop-filter:blur(10px);
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.container img{
+    width:110px;
+    max-width:100%;
+    height:auto;
+    margin-bottom:20px;
+}
+
+h1{
+    margin-bottom:30px;
+    font-size:2.2rem;
+    color:rgb(51,41,38);
+    padding:10px 0;
+}
+
+.social-links{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.social-links a{
+    text-decoration:none;
+    color:#fff;
+    padding:15px;
+    border-radius:12px;
+    font-size:20px;
+    transition:.3s;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+}
+
+.social-links a:hover{
+    transform:translateY(-5px);
+    background:#2563eb;
+}
+
+.facebook{background:#1877F2;}
+.youtube{background:#FF0000;}
+.tiktok{background:#111111;}
+.instagram{
+    background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
+}
+.linkedin{background:#0077B5;}
+
+/* ================= Responsive ================= */
+
+@media (max-width:768px){
+
+    .container{
+        padding:30px 20px;
+    }
+
+    h1{
+        font-size:1.8rem;
+    }
+
+    .container img{
+        width:90px;
+    }
+
+    .social-links{
+        gap:15px;
+    }
+
+    .social-links a{
+        width:45%;
+        font-size:18px;
+        padding:14px;
+    }
+}
+
+@media (max-width:480px){
+
+    .container{
+        padding:25px 15px;
+    }
+
+    h1{
+        font-size:1.5rem;
+    }
+
+    .container img{
+        width:80px;
+    }
+
+    .social-links{
+        flex-direction:column;
+    }
+
+    .social-links a{
+        width:100%;
+        font-size:17px;
+        padding:15px;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<img style="margin-bottom: 20px;" src="logo.jpg" width="110px" alt="Logo">
+    <h1>HuCoderz Available on</h1>
+
+    <div class="social-links">
+
+        <a href="https://www.facebook.com/profile.php?id=61590869090521" class="facebook" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+            Facebook
+        </a>
+
+        <a href="https://www.youtube.com/channel/UCmEYL3uTJrHamMj5Lp1nLTQ" class="youtube" target="_blank">
+            <i class="fab fa-youtube"></i>
+            YouTube
+        </a>
+
+        <a href="https://www.tiktok.com/@hucoderz?is_from_webapp=1&sender_device=pc" class="tiktok" target="_blank">
+            <i class="fab fa-tiktok"></i>
+            TikTok
+        </a>
+
+        <a href="https://www.instagram.com/hucoderz" class="instagram" target="_blank">
+            <i class="fab fa-instagram"></i>
+            Instagram
+        </a>
+
+        <a href="https://www.linkedin.com/company/hucoderz" class="linkedin" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+            LinkedIn
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
